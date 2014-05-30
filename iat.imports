@@ -1,0 +1,40 @@
+;   =========================================================
+;           IAT
+;   =========================================================
+library kernel32, 'kernel32.dll',\
+        user32, 'user32.dll'
+
+import  kernel32,\
+        OutputDebugStringA, 'OutputDebugStringA',\
+        OutputDebugStringW, 'OutputDebugStringW',\
+        VirtualFree, 'VirtualFree',\
+        VirtualAlloc, 'VirtualAlloc',\
+        LoadLibraryA, 'LoadLibraryA',\
+        GetModuleHandleA, 'GetModuleHandleA',\
+        CreateThread, 'CreateThread',\
+        WaitForSingleObject, 'WaitForSingleObject',\
+        CreateFileW, 'CreateFileW',\
+        WriteFile, 'WriteFile',\
+        CloseHandle, 'CloseHandle',\
+        lstrlenW, 'lstrlenW',\
+        lstrcmpW, 'lstrcmpW',\
+        GetLocalTime, 'GetLocalTime',\
+        lstrcpyW, 'lstrcpyW'
+                
+import  user32,\
+        ToUnicodeEx, 'ToUnicodeEx',\
+        GetWindowThreadProcessId, 'GetWindowThreadProcessId',\
+        UnhookWindowsHookEx, 'UnhookWindowsHookEx',\
+        DispatchMessageA, 'DispatchMessageA',\
+        SetWindowsHookExA, 'SetWindowsHookExA',\
+        GetKeyboardLayout, 'GetKeyboardLayout',\
+        GetForegroundWindow, 'GetForegroundWindow',\
+        GetKeyboardState, 'GetKeyboardState',\
+        TranslateMessage, 'TranslateMessage',\
+        CallNextHookEx, 'CallNextHookEx',\
+        GetKeyState, 'GetKeyState',\
+        GetMessageA, 'GetMessageA',\
+        wsprintfA, 'wsprintfA',\
+        GetKeyNameTextW, 'GetKeyNameTextW',\
+        GetWindowTextW, 'GetWindowTextW',\
+        wsprintfW, 'wsprintfW'
